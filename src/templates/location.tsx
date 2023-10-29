@@ -169,7 +169,12 @@ const Location: Template<TemplateRenderProps> = ({
               </div>
               <div className="col-span-2 pt-5 space-y-10">
                 <div>
-                  {hours && <Hours title={"Restaurant Hours"} hours={hours} />}
+                  {hours && (
+                    <Hours
+                      title={"Öffnungszeiten des Restaurants"}
+                      hours={hours}
+                    />
+                  )}
                 </div>
                 {geocodedCoordinate && (
                   <StaticMap

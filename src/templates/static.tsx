@@ -19,6 +19,7 @@ import Favicon from "../assets/images/yext-favicon.ico";
 import Banner from "../components/banner";
 import PageLayout from "../components/page-layout";
 import { ExternalImage } from "../types/ExternalImage";
+import CSearchBar from "../components/CSearchBar";
 /**
  * Not required depending on your use case.
  */
@@ -65,7 +66,7 @@ export const getHeadConfig: GetHeadConfig<
   TemplateRenderProps
 > = (): HeadConfig => {
   return {
-    title: "Arden | Home",
+    title: "Swisscom | Home",
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1",
     tags: [
@@ -86,35 +87,29 @@ export const getHeadConfig: GetHeadConfig<
  */
 const Static: Template<TemplateRenderProps> = ({ document }) => {
   const { _site } = document;
-  const {} = _site;
+  const { name } = _site;
   return (
     <>
       <PageLayout>
         <img />
-        <div className="h-96" style={{ backgroundColor: "#7f1d1d" }}>
-          <div
-            className="text-white"
-            style={{
-              width: "50%",
-              display: "flex",
-              fontSize: "4em",
-              marginLeft: "1em",
-              height: "100%",
-              alignItems: "center",
-              textAlign: "left",
-            }}
-          >
-            {name}
+        <div
+          className=""
+          style={{
+            backgroundColor: "#7f1d1d",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "46em",
+          }}
+        >
+          <div className="w-3/4" style={{ float: "right", marginTop: "1em" }}>
+            <CSearchBar />
           </div>
         </div>
-        <div>description</div>
-        <div>star rating image</div>
-        <div>why study at Arden</div>
-        <div>Arden's Manchester Study Centre</div>
-        <div>mid page banner with image and desc</div>
-        <div>Find your perfect Law degree</div>
-        <div>Start your journey with Arden University</div>
-        <img src={c_footerImage.url} />
+        <div></div>
+        <div></div>
+        <div></div>
+        <img />
       </PageLayout>
     </>
   );

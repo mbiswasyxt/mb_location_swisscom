@@ -8,7 +8,7 @@ const Contact = (props: any) => {
   return (
     <>
       <div className="grid gap-y-5">
-        <div className="text-xl font-semibold">Contact</div>
+        <div className="text-xl font-semibold">Kontakt</div>
         <div className="grid gap-y-3">
           <Address address={address} />
           <div>
