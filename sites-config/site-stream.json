@@ -1,7 +1,7 @@
 {
   "$id": "site-entity",
   "filter": {
-    "entityIds": [""]
+    "entityIds": ["5864013665985081688"]
   },
   "source": "knowledgeGraph",
   "fields": [],

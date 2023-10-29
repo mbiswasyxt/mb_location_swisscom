@@ -90,8 +90,8 @@ const Static: Template<TemplateRenderProps> = ({ document }) => {
   return (
     <>
       <PageLayout>
-        <img src={c_headerImage.url} />
-        <div className="h-96" style={{ backgroundColor: "#001e50" }}>
+        <img />
+        <div className="h-96" style={{ backgroundColor: "#7f1d1d" }}>
           <div
             className="text-white"
             style={{
