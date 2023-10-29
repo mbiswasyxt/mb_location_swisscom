@@ -25,7 +25,7 @@ import { ExternalImage } from "../types/ExternalImage";
 export const config: TemplateConfig = {
   // The name of the feature. If not set the name of this file will be used (without extension).
   // Use this when you need to override the feature name.
-  name: "turtlehead-tacos",
+  name: "Local Search Demo",
 };
 
 /**
@@ -65,7 +65,7 @@ export const getHeadConfig: GetHeadConfig<
   TemplateRenderProps
 > = (): HeadConfig => {
   return {
-    title: "Outreach | Home",
+    title: "Arden | Home",
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1",
     tags: [
@@ -85,15 +85,36 @@ export const getHeadConfig: GetHeadConfig<
  * The props passed in here are the direct result from `transformProps`.
  */
 const Static: Template<TemplateRenderProps> = ({ document }) => {
+  const { _site } = document;
+  const {} = _site;
   return (
     <>
       <PageLayout>
-        <Banner name={"Turtlehead Tacos"} />
-        <div className="centered-container">
-          <div className="section space-y-14 px-10">
-            {/* <Card {...externalImage} /> */}
+        <img src={c_headerImage.url} />
+        <div className="h-96" style={{ backgroundColor: "#001e50" }}>
+          <div
+            className="text-white"
+            style={{
+              width: "50%",
+              display: "flex",
+              fontSize: "4em",
+              marginLeft: "1em",
+              height: "100%",
+              alignItems: "center",
+              textAlign: "left",
+            }}
+          >
+            {name}
           </div>
         </div>
+        <div>description</div>
+        <div>star rating image</div>
+        <div>why study at Arden</div>
+        <div>Arden's Manchester Study Centre</div>
+        <div>mid page banner with image and desc</div>
+        <div>Find your perfect Law degree</div>
+        <div>Start your journey with Arden University</div>
+        <img src={c_footerImage.url} />
       </PageLayout>
     </>
   );

@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="centered-container">
+      {/* <div className="centered-container">
         <nav className="py-6 flex items-center justify-between">
           <img
             src="https://cdn.fs.brandfolder.com/cache=expiry:604800/deY3VGFpSjC761Abjbfc"
@@ -46,7 +46,7 @@ const Header = () => {
             ></Cta>
           </div>
         </nav>
-      </div>
+      </div> */}
     </>
   );
 };

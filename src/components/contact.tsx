@@ -16,7 +16,7 @@ const Contact = (props: any) => {
           </div>
         </div>
         <div className="w-30">
-          <Cta buttonText="Order Online" url="#" style="primary-cta"></Cta>
+          <Cta buttonText="Jetzt buchen!" url="#" style="primary-cta"></Cta>
         </div>
       </div>
     </>

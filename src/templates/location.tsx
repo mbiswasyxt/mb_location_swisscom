@@ -27,6 +27,7 @@ import List from "../components/list";
 import PageLayout from "../components/page-layout";
 import StaticMap from "../components/static-map";
 import "../index.css";
+import CSearchBar from "../components/CSearchBar";
 
 /**
  * Required when Knowledge Graph data is used for a template.
@@ -140,11 +141,20 @@ const Location: Template<TemplateRenderProps> = ({
   return (
     <>
       <PageLayout>
+        <div
+          style={{ width: "100%", backgroundColor: "#7f1d1d", height: "6em" }}
+        >
+          <div className="w-1/4" style={{ float: "right", marginTop: "1em" }}>
+            <CSearchBar />
+          </div>
+        </div>
         <Banner name={name} address={address} openTime={openTime}>
           <div className="bg-white h-40 w-1/5 flex items-center justify-center text-center flex-col space-y-4 rounded-lg">
-            <div className="text-black text-base">Visit Us Today!</div>
+            <div className="text-black text-base">
+              Besuchen Sie uns noch heute!
+            </div>
             <Cta
-              buttonText="Get Directions"
+              buttonText="Hier geht’s zur Website!"
               url="http://google.com"
               style="primary-cta"
             />
